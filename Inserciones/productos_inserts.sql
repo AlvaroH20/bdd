@@ -7,6 +7,7 @@ create table productos(
 	stock int not null,
 	constraint productos_pk primary key(codigo)
 )
+--5 inserts en todos los campos
 insert into productos(codigo,nombre,descripcion,precio,stock)
 values(124,'Noddles','Deliciosos fideos asiaticos',4.5,56)
 insert into productos(codigo,nombre,descripcion,precio,stock)
@@ -17,5 +18,12 @@ insert into productos(codigo,nombre,descripcion,precio,stock)
 values(122,'Omurice','Arroz frito tradicional',4.85,10)
 insert into productos(codigo,nombre,descripcion,precio,stock)
 values(127,'Algas Marinas','Algas para sushi extra pack',7.6,66)
+--solo con los campos obligatorios
+insert into productos(codigo,nombre,precio,stock)
+values(128,'Palillos',1.2,104)
+insert into productos(codigo,nombre,precio,stock)
+values(129,'Hielo',0.64,107)
+insert into productos(codigo,nombre,precio,stock)
+values(130,'Servilletas',0.50,206)
 
 select * from productos
