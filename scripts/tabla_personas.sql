@@ -24,3 +24,6 @@ values ( '1714616126' , 'Estefania' , 'Rosales' ,1,1.58,'22/05/2000','22:54',200
  
 select cedula,nombre,numero_hijos,estatura from personas
 select * from personas
+--para actualizar
+update personas set estatura=1.70 where cedula='1714616125'
+update personas set cantidad_ahorrada=0 where cantidad_ahorrada is null
