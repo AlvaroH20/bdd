@@ -14,11 +14,13 @@ public class TestCalculadora {
 		double resultadoDivi=calcu.dividir(10, 2);
 		double resultadoProm=calcu.promediar(10, 8, 9);
 		
+		
 		System.out.println("RESULTADO SUMA: "+resultadoSuma);
 		System.out.println("RESULTADO RESTA: "+resultadoResta);
 		System.out.println("RESULTADO MULTIPLICACION: "+resultadoMul);
 		System.out.println("RESULTADO DIVISION: "+resultadoDivi);
 		System.out.println("RESULTADO PROMEDIO: "+resultadoProm);
+		calcu.mostrarResultado();
 	}
 
 }
