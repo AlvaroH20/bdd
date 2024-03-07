@@ -13,6 +13,11 @@ public class Calculadora {
 		double resultado=valor1*valor2;
 		return resultado;
 	} 
+	public double dividir(double dividendo, double divisor) {
+		double resultado=dividendo/divisor;
+		return resultado;
+	} 
+
 
 }
 
