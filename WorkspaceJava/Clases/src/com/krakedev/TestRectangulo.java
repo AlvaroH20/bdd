@@ -11,14 +11,14 @@ public class TestRectangulo {
 		int areaR2;
 		double perimetroV;
 		
-		r1.base=10;
-		r1.altura=5;
+		r1.setBase(10);
+		r1.setAltura(5);
 		
-		r2.base=8;
-		r2.altura=3;
+		r2.setBase(8);
+		r2.setAltura(3);
 		
-		perimetro.base=4;
-		perimetro.altura=2;
+		perimetro.setBase(4);
+		perimetro.setAltura(2);
 		
 		perimetroV=perimetro.calcularPerimetro();
 		System.out.println("Perimetro: "+perimetroV);
