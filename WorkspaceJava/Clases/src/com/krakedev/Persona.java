@@ -5,6 +5,12 @@ public class Persona {
 	private int edad;
 	private double estatura;
 	
+	public Persona(String nombre, int edad, double estatura){
+		this.nombre=nombre;
+		this.edad=edad;
+		this.estatura=estatura;
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}

@@ -4,8 +4,8 @@ public class TestPersona {
 
 	public static void main(String[] args) {
 		Persona p; //1. Declaro una variable llamada p tipo Persona
-		Persona p2=new Persona();
-		p=new Persona();//2. instanciar un objeto Persona y guardarle 
+		Persona p2=new Persona("Angelina",75,1.54);
+		p=new Persona("Mario",45,1.56);//2. instanciar un objeto Persona y guardarle 
 		
 		// 3. Accedo a los atributos
 		System.out.println("nombre:"+p.getNombre());
@@ -26,6 +26,8 @@ public class TestPersona {
 		System.out.println("***************");
 		System.out.println("p.nombre: "+p.getNombre());
 		System.out.println("p2.nombre: "+p2.getNombre());
+		System.out.println("edad:"+p2.getEdad());
+		System.out.println("estatura:"+p2.getEstatura());
 	}
 
 }
