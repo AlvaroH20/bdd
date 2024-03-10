@@ -17,7 +17,7 @@ public class TestCuenta {
 		
 		System.out.println("------Valores Iniciales------");
 		cuenta1.imprimir();
-		cuenta2.imprimir();
+		cuenta2.imprimir(); 
 		cuenta3.imprimir();
 		System.out.println("------Valores Modificados------");
 		cuenta1.setSaldo(444);
