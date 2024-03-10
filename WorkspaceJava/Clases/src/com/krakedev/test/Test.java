@@ -1,4 +1,4 @@
-package com.krakedev;
+package com.krakedev.test;
 
 public class Test {
 	int x =5;

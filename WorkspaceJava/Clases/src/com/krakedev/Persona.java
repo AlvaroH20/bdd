@@ -23,7 +23,7 @@ public class Persona {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
-	double getEstatura() {
+	public double getEstatura() {
 		return estatura;
 	}
 	public void setEstatura(double estatura) {
