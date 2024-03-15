@@ -2,7 +2,7 @@ package clearminds.cuentas.test;
 
 import clearminds.cuentas.Producto;
 
-public class TestProducto {
+public class TestProductor {
 
 	public static void main(String[] args) {
 		Producto producto1=new Producto(526,"Coca-Cola");

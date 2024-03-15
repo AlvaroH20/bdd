@@ -2,7 +2,7 @@ package com.krakedev.demo.test;
 
 import com.krakedev.demo.Producto;
 
-public class TestProducto {
+public class TestProduc {
 
 	public static void main(String[] args) {
 		Producto producto1=new Producto(154,"CocaCola");
