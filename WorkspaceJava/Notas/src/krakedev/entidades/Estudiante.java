@@ -21,6 +21,7 @@ public class Estudiante {
 	        Nota nota = notas.get(i);
 	        if (nota.getMateria().getCodigo().equals(nuevaNota.getMateria().getCodigo())) {
 	            codigoRepetido = true;
+	            System.out.println("No se puede agregar la nota-duplicado");
 	        }
 	    }
 	    if(codigoRepetido==false && nuevaNota.getCalificacion()>=0 && nuevaNota.getCalificacion()<=10) {
