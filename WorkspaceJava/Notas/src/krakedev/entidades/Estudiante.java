@@ -21,11 +21,15 @@ public class Estudiante {
 	        Nota nota = notas.get(i);
 	        if (nota.getMateria().getCodigo().equals(nuevaNota.getMateria().getCodigo())) {
 	            codigoRepetido = true;
-	            System.out.println("No se puede agregar la nota-duplicado");
+	            System.out.println("No se agrego la nota debido a duplicidad.");
 	        }
 	    }
 	    if(codigoRepetido==false && nuevaNota.getCalificacion()>=0 && nuevaNota.getCalificacion()<=10) {
 	    	notas.add(nuevaNota);
+	    }else{
+	    	if (nuevaNota.getCalificacion() < 0 || nuevaNota.getCalificacion() > 10) {
+	            System.out.println("La nueva nota debe ser mayor o igual a 0 y menor o igual a 10.");
+	        }
 	    }
 
 	}
@@ -44,7 +48,7 @@ public class Estudiante {
 	        if (nuevaNota >= 0 && nuevaNota <= 10) {
 	            notaModificada.setCalificacion(nuevaNota);
 	        } else {
-	            System.out.println("No se encontró el código de materia o la nueva nota debe ser mayor o igual a 0 y menor o igual a 10.");
+	            System.out.println("La nueva nota debe ser mayor o igual a 0 y menor o igual a 10.");
 	        }
 	    } else {
 	        System.out.println("No se encontró el código de materia.");
