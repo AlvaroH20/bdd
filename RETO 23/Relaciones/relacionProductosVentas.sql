@@ -27,7 +27,7 @@ values
     (108, 'Jamón Serrano', 'Producto ibérico de alta calidad', 12.75, 30),
     (109, 'Miel', 'Tarro de miel natural', 6.99, 25),
     (110, 'Té de Manzanilla', 'Infusión relajante', 4.50, 50),
-    (111, 'Yogur de Mango','', 2.00, 40),
+    (111, 'Yogur de Mango','NULL', 2.00, 40),
     (112, 'Lechuga','Hojas frescas de lechuga', 1.80, 55),
     (113, 'Pimientos','Verduras rojas y verdes', 2.30, 35),
     (114, 'Aceitunas','Fruto del olivo', 3.75, 20),
