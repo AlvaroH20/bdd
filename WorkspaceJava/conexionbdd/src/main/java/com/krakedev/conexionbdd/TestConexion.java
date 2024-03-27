@@ -1,5 +1,6 @@
 package com.krakedev.conexionbdd;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -19,14 +20,15 @@ public class TestConexion {
 			Class.forName("org.postgresql.Driver");
 			connection=DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","12345678");
 			System.out.println("conexion exitosa");
-			ps=connection.prepareStatement("insert into clientes(cedula,nombre,apellido,fecha_nacimiento,hora_nacimiento)"
-					+"values(?,?,?,?,?)");//añade las incognitas necesarias por atibuto
+			ps=connection.prepareStatement("insert into persona(cedula,nombre,apellido,estatura,fecha_nacimiento,hora_nacimiento,cantidad_ahorrada,numero_hijos,estado_civil)"
+					+"values(?,?,?,?,?,?,?,?,?)");//añade las incognitas necesarias por atibuto
 			ps.setString(1, "1745236985");
 			ps.setString(2, "Carlos");
 			ps.setString(3, "Ramirez");
-			//ps.setInt(4, 2);
-			//ps.setDouble(5, 1.56);
-			//ps.setBigDecimal(6, new BigDecimal(1200.34)); para money
+			ps.setDouble(4, 1.56);
+			ps.setInt(8, 2);
+			
+			ps.setBigDecimal(7, new BigDecimal(1200.34));
 			SimpleDateFormat sf=new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
 			String fechaStr="2020/03/22 10:05:04";
 			try {
@@ -41,8 +43,8 @@ public class TestConexion {
 				Time timeSQL=new Time(fechaMilis);
 				System.out.println(timeSQL);
 				
-				ps.setDate(4, fechaSQL);
-				ps.setTime(5, timeSQL);
+				ps.setDate(5, fechaSQL);
+				ps.setTime(6, timeSQL);
 				
 				ps.executeUpdate();
 				System.out.println("Ejecuta insert");
