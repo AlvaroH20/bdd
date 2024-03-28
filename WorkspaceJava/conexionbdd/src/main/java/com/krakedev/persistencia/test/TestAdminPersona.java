@@ -12,14 +12,15 @@ public class TestAdminPersona {
 
 	public static void main(String[] args) {
 		EstadoCivil ec= new EstadoCivil("U","Union Libre");
-		Persona p=new Persona("1716547852","Bertha","Lasso",ec);
+		Persona p=new Persona("1718557888","Pedro","Pascal",ec);
 		try {
-			Date fechaNac=Convertidor.convertirFecha("2000/01/20");
-			Date horaNac=Convertidor.convertirHora("09:50");
+			Date fechaNac=Convertidor.convertirFecha("1935/01/20");
+			Date horaNac=Convertidor.convertirHora("08:50");
 			p.setFechaNacimiento(fechaNac);
 			p.setHoraNacimiento(horaNac);
-			p.setCantidadAhorrada(new BigDecimal(1230.45));
-			p.setNumeroHijos(5);
+			p.setCantidadAhorrada(new BigDecimal(900.55));
+			p.setNumeroHijos(2);
+			p.setEstatura(1.77);
 			AdminPersonas.insertar(p);
 			
 		} catch (Exception e) {
